@@ -1,0 +1,15 @@
+{
+    "name": "react-bytes",
+    "version": "1.0.0",        
+    "scripts": {
+      "build": "babel src -d dist",
+      "prepublishOnly": "npm run build"
+    },
+    "keywords": ["react", "component", "npm"],
+    "author": "Lawazia Tech",
+    "license": "MIT",
+    "peerDependencies": {
+      "react": "^18.2.0",
+      "react-native-web": "^0.19.9"
+    }
+  }
