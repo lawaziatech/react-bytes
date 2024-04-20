@@ -1,15 +1,30 @@
 {
-    "name": "react-bytes",
-    "version": "1.0.0",        
+    "name": "react-byto",
+    "version": "1.2.0",
+    "main": "dist/index.js",
     "scripts": {
-      "build": "babel src -d dist",
-      "prepublishOnly": "npm run build"
+        "build": "babel src -d dist --copy-files",
+        "prepublishOnly": "npm run build"
     },
-    "keywords": ["react", "component", "npm"],
+    "keywords": [
+        "react",
+        "component",
+        "npm"
+    ],
     "author": "Lawazia Tech",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lawaziatech/react-byto.git"
+    },
     "peerDependencies": {
-      "react": "^18.2.0",
-      "react-native-web": "^0.19.9"
+        "react": "^18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.24.1",
+        "@babel/core": "^7.24.4",
+        "@babel/preset-env": "^7.24.4",
+        "@babel/preset-react": "^7.24.1"
     }
-  }
+}
